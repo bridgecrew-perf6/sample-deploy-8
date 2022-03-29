@@ -6,7 +6,7 @@ function App() {
   let [people, changePeople] = useState([])
 
   const getBen = async () => {
-    let people = await axios.get('http://localhost:3001/people')
+    let people = await axios.get('/people')
     changePeople(people.data)
   }
 
