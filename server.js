@@ -4,7 +4,8 @@ const db = require('./db');
 const { Person } = require('./models')
 
 
-const PORT = process.env.port || 3001;
+const PORT = process.env.PORT || 3001;
+console.log(PORT)
 const app = express();
 
 // MIDDLEWARE
